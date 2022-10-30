@@ -466,6 +466,8 @@ config LANTIQ
 config MACH_LOONGSON32
 	bool "Loongson 32-bit family of machines"
 	select SYS_SUPPORTS_ZBOOT
+	select USE_OF
+	select BUILTIN_DTB
 	help
 	  This enables support for the Loongson-1 family of machines.
 
