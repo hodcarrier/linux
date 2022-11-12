@@ -19,6 +19,14 @@ config YAMON_DT_SHIM
 
 comment "Legacy (non-UHI/non-FIT) Boards"
 
+config LEGACY_BOARD_LOONGSON32
+	bool "Support LOONGSON32 boards"
+	select LEGACY_BOARDS
+	select YAMON_DT_SHIM
+	help
+	  Enable this to include support for booting on Loongson mips 32bit
+	  development boards, which boot using a legacy boot protocol.
+
 config LEGACY_BOARD_SEAD3
 	bool "Support MIPS SEAD-3 boards"
 	select LEGACY_BOARDS

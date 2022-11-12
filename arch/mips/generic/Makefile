@@ -9,6 +9,7 @@ obj-y += irq.o
 obj-y += proc.o
 
 obj-$(CONFIG_YAMON_DT_SHIM)		+= yamon-dt.o
+obj-$(CONFIG_LEGACY_BOARD_LOONGSON32)   += board-loongson32.o
 obj-$(CONFIG_LEGACY_BOARD_SEAD3)	+= board-sead3.o
 obj-$(CONFIG_LEGACY_BOARD_OCELOT)	+= board-ocelot.o
 obj-$(CONFIG_MACH_INGENIC)			+= board-ingenic.o
